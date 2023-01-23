@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="file" Width="50" Height="40" Margin="375,60,0,0" VerticalAlignment="Top" Click="file_Click" HorizontalAlignment="Left" />
+        <Image x:Name="image"
+               Source="C:\Users\vojta\Pictures\icon.png"
+            HorizontalAlignment="Left" 
+            Height="227" Margin="261,0,0,41" 
+            VerticalAlignment="Bottom" Width="264"
+           
+            />
+
 
     </Grid>
 </Window>

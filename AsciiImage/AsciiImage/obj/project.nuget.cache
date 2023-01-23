@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "KYmeMIo6/oJiMeBHreLsxuywdmfNu/A9i5WnTaLlMLiqwPm5kDtAqwXlYAkpj880VdOw2DXJcs9dZt6RQmg1VA==",
+  "dgSpecHash": "XDgt0gm52eaY/yMv8jPq/j74YcENvWYiViomvSSLL9awh2srncnxxktYNoARMmhk8WVPPu451P5SLZkao+3gXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\vojta\\source\\repos\\AsciiImage\\AsciiImage\\AsciiImage.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\vojta\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\vojta\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
