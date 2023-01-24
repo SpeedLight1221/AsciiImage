@@ -82,13 +82,23 @@ namespace AsciiImage
 
             Bitmap BmpImage = convert(img);
             
-           for (int i = 0; i < img.PixelWidth; i++)
+           for (int i = 0; i < BmpImage.Width; i++)
             {
-                for (int j = 0; j < img.PixelHeight; j++)
+                for (int j = 0; j < BmpImage.Height; j++)
                 {
                     System.Drawing.Color pixel = BmpImage.GetPixel(i, j);
+
+                    
+
+                    //BMPImage width or height arent in pixel, fix that
+
                 }
             }
+            content.Text = Convert.ToString(BmpImage.Width);
+            content.Text = content.Text + " " + Convert.ToString(BmpImage.Height);
+
+
+
         }
     }
 }
