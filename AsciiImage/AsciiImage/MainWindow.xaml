@@ -7,15 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="file" Width="50" Height="40" Margin="375,60,0,0" VerticalAlignment="Top" Click="file_Click" HorizontalAlignment="Left" />
-        <Image x:Name="image"
-               Source="C:\Users\vojta\Pictures\icon.png"
-            HorizontalAlignment="Left" 
-            Height="227" Margin="261,0,0,41" 
-            VerticalAlignment="Bottom" Width="264"
-           
-            />
+        <Button x:Name="file" Width="50" Height="40" Margin="329,0,0,394" VerticalAlignment="Bottom" Click="file_Click" HorizontalAlignment="Left" />
 
+        <Button x:Name="run" Width=" 50" Height="40 " Margin="410,0,0,394" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="run_Click" />
+        <TextBlock x:Name="content" Height="370" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="800"/>
 
     </Grid>
 </Window>

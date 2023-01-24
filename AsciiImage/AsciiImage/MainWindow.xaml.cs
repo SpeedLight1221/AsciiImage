@@ -15,8 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Drawing;
 using Microsoft.Win32;
-
-
+using System.IO;
 
 namespace AsciiImage
 {
@@ -57,17 +56,39 @@ namespace AsciiImage
                 }
                 
 
-                image.Source = img;
+                
             }
            
 
             
         }
 
-        public
-        
+        public Bitmap convert(BitmapImage bpmI)
+        {
+            using(MemoryStream outStream = new MemoryStream())
+            {
+                BitmapEncoder ENC = new BmpBitmapEncoder();
+                ENC.Frames.Add(BitmapFrame.Create(bpmI));
+                ENC.Save(outStream);
+                System.Drawing.Bitmap bitmap = new System.Drawing.Bitmap(outStream);
+                return new Bitmap(bitmap);
 
+            }
+        }
 
-       
+        private void run_Click(object sender, RoutedEventArgs e)
+        {
+            char[,] symbols = new char[img.PixelHeight, img.PixelWidth];
+
+            Bitmap BmpImage = convert(img);
+            
+           for (int i = 0; i < img.PixelWidth; i++)
+            {
+                for (int j = 0; j < img.PixelHeight; j++)
+                {
+                    System.Drawing.Color pixel = BmpImage.GetPixel(i, j);
+                }
+            }
+        }
     }
 }
